@@ -1,3 +1,98 @@
+//local
+// const mascotas = [
+//     {
+//         nombre: 'Rex',
+//         edad: '2 años',
+//         raza: 'Labrador',
+//         sexo: 'Macho',
+//         tipo: 'perro',
+//         edadCategoria: 'adulto',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+//     },
+//     {
+//         nombre: 'Luna',
+//         edad: '1 año',
+//         raza: 'Siamés',
+//         sexo: 'Hembra',
+//         tipo: 'gato',
+//         edadCategoria: 'cachorro',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+//     },
+//     {
+//         nombre: 'Rex',
+//         edad: '2 años',
+//         raza: 'Labrador',
+//         sexo: 'Macho',
+//         tipo: 'perro',
+//         edadCategoria: 'adulto',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+//     },
+//     {
+//         nombre: 'Luna',
+//         edad: '1 año',
+//         raza: 'Siamés',
+//         sexo: 'Hembra',
+//         tipo: 'gato',
+//         edadCategoria: 'cachorro',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+//     },
+//     {
+//         nombre: 'Rex',
+//         edad: '2 años',
+//         raza: 'Labrador',
+//         sexo: 'Macho',
+//         tipo: 'perro',
+//         edadCategoria: 'adulto',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+//     },
+//     {
+//         nombre: 'Luna',
+//         edad: '1 año',
+//         raza: 'Siamés',
+//         sexo: 'Hembra',
+//         tipo: 'gato',
+//         edadCategoria: 'cachorro',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+//     },
+//     {
+//         nombre: 'Rex',
+//         edad: '2 años',
+//         raza: 'Labrador',
+//         sexo: 'Macho',
+//         tipo: 'perro',
+//         edadCategoria: 'adulto',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+//     },
+//     {
+//         nombre: 'Luna',
+//         edad: '1 año',
+//         raza: 'Siamés',
+//         sexo: 'Hembra',
+//         tipo: 'gato',
+//         edadCategoria: 'cachorro',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+//     },
+//     {
+//         nombre: 'Rex',
+//         edad: '2 años',
+//         raza: 'Labrador',
+//         sexo: 'Macho',
+//         tipo: 'perro',
+//         edadCategoria: 'adulto',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+//     },
+//     {
+//         nombre: 'Luna',
+//         edad: '1 año',
+//         raza: 'Siamés',
+//         sexo: 'Hembra',
+//         tipo: 'gato',
+//         edadCategoria: 'cachorro',
+//         imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+//     },
+// ];
+
+//deploy
 const mascotas = [
     {
         nombre: 'Rex',
@@ -6,7 +101,7 @@ const mascotas = [
         sexo: 'Macho',
         tipo: 'perro',
         edadCategoria: 'adulto',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+        imagen: '../multimedia/img/foto-labrador.jpg'
     },
     {
         nombre: 'Luna',
@@ -15,7 +110,7 @@ const mascotas = [
         sexo: 'Hembra',
         tipo: 'gato',
         edadCategoria: 'cachorro',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+        imagen: '..0/multimedia/img/foto-siames.jpg'
     },
     {
         nombre: 'Rex',
@@ -24,7 +119,7 @@ const mascotas = [
         sexo: 'Macho',
         tipo: 'perro',
         edadCategoria: 'adulto',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+        imagen: '../multimedia/img/foto-labrador.jpg'
     },
     {
         nombre: 'Luna',
@@ -33,7 +128,7 @@ const mascotas = [
         sexo: 'Hembra',
         tipo: 'gato',
         edadCategoria: 'cachorro',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+        imagen: '../multimedia/img/foto-siames.jpg'
     },
     {
         nombre: 'Rex',
@@ -42,7 +137,7 @@ const mascotas = [
         sexo: 'Macho',
         tipo: 'perro',
         edadCategoria: 'adulto',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+        imagen: '../multimedia/img/foto-labrador.jpg'
     },
     {
         nombre: 'Luna',
@@ -51,7 +146,7 @@ const mascotas = [
         sexo: 'Hembra',
         tipo: 'gato',
         edadCategoria: 'cachorro',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+        imagen: '../multimedia/img/foto-siames.jpg'
     },
     {
         nombre: 'Rex',
@@ -60,7 +155,7 @@ const mascotas = [
         sexo: 'Macho',
         tipo: 'perro',
         edadCategoria: 'adulto',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+        imagen: '../multimedia/img/foto-labrador.jpg'
     },
     {
         nombre: 'Luna',
@@ -69,7 +164,7 @@ const mascotas = [
         sexo: 'Hembra',
         tipo: 'gato',
         edadCategoria: 'cachorro',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+        imagen: '../multimedia/img/foto-siames.jpg'
     },
     {
         nombre: 'Rex',
@@ -78,7 +173,7 @@ const mascotas = [
         sexo: 'Macho',
         tipo: 'perro',
         edadCategoria: 'adulto',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-labrador.jpg'
+        imagen: '../multimedia/img/foto-labrador.jpg'
     },
     {
         nombre: 'Luna',
@@ -87,7 +182,7 @@ const mascotas = [
         sexo: 'Hembra',
         tipo: 'gato',
         edadCategoria: 'cachorro',
-        imagen: 'http://127.0.0.1:5500/multimedia/img/foto-siames.jpg'
+        imagen: '../multimedia/img/foto-siames.jpg'
     },
 ];
 
