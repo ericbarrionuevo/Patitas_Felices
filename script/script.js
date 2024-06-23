@@ -18,7 +18,7 @@ function loadFooter() {
 
 function hideAdoptButtonIfOnAdoptionPage() {
     const path = window.location.pathname;
-    if (path.includes('adopcion.html')) {
+    if (path.includes('adopcion')) {
         const btnAdoptar = document.querySelector('.btn-adoptar');
         if (btnAdoptar) {
             btnAdoptar.style.display = 'none';
