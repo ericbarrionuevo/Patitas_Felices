@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas en Adopción</title>
+    <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+    <script src="../script/script.js" defer></script>
+    <script src="../script/adopcion.js" defer></script>
+</head>
+<body onload="loadHeader(); loadFooter();">
+    <div id="header-placeholder"></div>
+
+    <section class="adopcion">
+        <h1>Mascotas en Adopción</h1>
+        <div class="filtros">
+            <label for="tipo">Tipo de Mascota:</label>
+            <select id="tipo">
+                <option value="todos">Cualquiera</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+            </select>
+            <label for="edad">Edad:</label>
+            <select id="edad">
+                <option value="todas">Cualquiera</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="adulto">Adulto</option>
+            </select>
+        </div>
+        <div class="galeria" id="galeria">
+            <a href="#" class="btn-adoptar">Seleccionar</a>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>
