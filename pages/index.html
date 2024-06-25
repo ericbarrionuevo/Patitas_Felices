@@ -8,59 +8,34 @@
     <title>Patitas Felices</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css">
     <script src="../script/script.js" defer></script>
+    <link rel="stylesheet" href="../styles/index.css" type="text/css">
+    <script src="../script/index.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body onload="loadHeader(); loadFooter();">
+<body onload="loadHeader(); loadFooter(); typeH1(); typeH3();">
     <div id="header-placeholder"></div>
 
     <section class="banner">
         <div class="banner-content">
-            <h1>Encuentra a tu mejor amigo hoy</h1>
-            <p>Adopta, no compres. Salva una vida.</p>
-            <!-- <a href="../pages/adopcion.html" class="btn-adoptar">Adopta Ahora</a> -->
-            <!-- <div id="div-p-lorem">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                    ipsa sequi, ullam voluptas facere expedita nemo dolorem tempora illo, maxime consequuntur totam
-                    minima libero illum labore praesentium enim nulla. Autem!
-                </p>
-            </div> -->
+            <div class="typewriter-container">
+                <h1 id="typewriter-h1"></h1>
+            </div>
+            <div class="typewriter-container">
+                <h3 id="typewriter-h3"></h3>
+            </div>
+            <a href="../pages/adopcion.html" id="btnAdoptar" class="btn btn-lg btn-danger">ADOPTÁ AHORA</a>
         </div>
     </section>
 
-    
     <div id="footer-placeholder"></div>
 </body>
 
