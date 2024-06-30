@@ -47,15 +47,16 @@
     filter: invert(100%);
 }
 
-.navbar-toggler:hover {
-    /* background-color: #555; */
-}
+/* .navbar-toggler:hover {
+    background-color: #555;
+} */
 
 .navbar-collapse {
     position: fixed;
+    z-index: -1 !important;
     height: 100vh !important;
     width: 27rem;
-    left: -10rem;
+    left: -30rem;
     top: 0;
     opacity: 0 !important;
     display: flex !important;
@@ -83,7 +84,7 @@
     text-transform: uppercase;
     padding: 0 15px;
     margin: 10px 0;
-    -webkit-transition: 0.7s all !important;
+    -webkit-transition: 0.8s ease-in-out !important;
 }
 
 .navbar-nav li:hover {
@@ -91,7 +92,7 @@
     border-radius: 40px;
     transform: scale(1.05);
     translate: 3rem;
-    -webkit-transition: 0.7s all !important;
+    -webkit-transition: 0.35s ease-in-out !important;
 }
 
 .navbar-nav li a {
