@@ -1,0 +1,28 @@
+﻿footer {
+    background-color: #333;
+    color: white;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1000 !important;
+}
+
+    footer a, footer span {
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        text-transform: uppercase;
+        cursor: pointer !important;
+    }
+
+@media screen and (max-width: 999px) {
+    footer {
+        display: none;
+    }
+}

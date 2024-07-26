@@ -1,0 +1,286 @@
+﻿.mt-5 {
+    max-width: 100% !important;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem auto 0 !important;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.center-div {
+    position: fixed !important;
+    top: -1px !important;
+    left: 0 !important;
+    z-index: 10 !important;
+    width: 100% !important;
+    padding: 0.5rem !important;
+    text-align: center !important;
+    background-color: #333 !important;
+    opacity: 1 !important;
+}
+
+.mt-4.top {
+    margin: 10rem auto 0 !important;
+}
+
+.mt-4.bottom {
+    margin: 0 auto 5rem !important;
+}
+
+h1 {
+    font-size: 4rem !important;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -2px 2px 2px #000;
+    filter: blur(1px);
+}
+
+.br-h1 {
+    display: none;
+}
+
+form {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center;
+}
+
+.galeria {
+    justify-content: center;
+    margin: 9rem 0 2rem 0;
+}
+
+.div-sub-galeria {
+
+}
+
+.modal-header h5 {
+    text-align: center;
+    width: 100%;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-footer .btn {
+    width: 100%;
+}
+
+.filtros {
+    margin-top: 0 !important;
+}
+
+.filtros label {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 1px 1px 6px #000;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: left;
+}
+
+.filtros .form-control {
+    width: 200px !important;
+    max-width: 200px !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 2px solid #fff !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+    text-shadow: -1px 2px 2px #000 !important;
+    box-shadow: 0px 4px 5px #000;
+}
+
+.form-control option {
+    color: black !important;
+    text-shadow: none !important;
+}
+
+.tarjeta {
+    max-width: fit-content !important;
+}
+
+.card {
+    width: 15.5rem !important;
+    margin: 20px !important;
+    text-align: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    filter: drop-shadow(-5px 3px 1px #000) !important;
+    border-radius: 50px !important;
+    overflow: hidden !important;
+}
+
+.card-link {
+    text-decoration: none !important;
+}
+
+h5.card-title {
+    margin: 1rem 0 !important;
+    text-transform: uppercase !important;
+    font-size: 1.5rem !important;
+}
+
+.card-body {
+    text-align: justify !important;
+    background-color: #333 !important;
+    color: #fff !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+    font-weight: 600;
+    opacity: 0;
+    z-index: 999 !important;
+}
+
+.card:hover .card-body {
+    opacity: 0.9 !important;
+    cursor: pointer !important;
+}
+
+.div-card-txt {
+    text-align: left !important;
+    margin: 1rem auto !important;
+}
+
+.div-card-txt p {
+    margin-bottom: 0.2rem !important;
+    text-transform: uppercase;
+}
+
+.card-img-top {
+    max-width: 230px !important;
+    min-width: 230px !important;
+    max-height: 230px !important;
+    min-height: 230px !important;
+    padding: 1rem !important;
+}
+
+.card a {
+    border-radius: 20px !important;
+    text-shadow: -4px 2px 4px #000 !important;
+    background-color: #6a80037d !important;
+    outline: none !important;
+    border: none !important;
+    filter: drop-shadow(1px 1px 0px #000) !important;
+    box-shadow: -2px 2px 0px #000 !important;
+}
+
+.div-ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem !important;
+}
+
+.div-ubicacion-logo {
+    margin-right: 1rem !important;
+}
+
+.div-ubicacion-logo img {
+    max-width: 2rem !important;
+}
+
+.div-ubicacion-texto {
+
+}
+
+.card-btn {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-btn span {
+    background-color: green !important;
+    border: none !important;
+    border-bottom: 10px solid #000 !important;
+    font-weight: 600 !important;
+    font-size: 1.2rem;
+    text-shadow: -1px 3px 1px #000;
+}
+
+.card-btn span:active,
+.card-btn span:focus-visible {
+    background-color: green !important;
+    outline: none !important;
+}
+
+.pagination .page-item .page-link {
+    color: black;
+    background-color: darkgrey;
+    outline: none !important;
+    border: none !important;
+}
+
+.pagination .active .page-link {
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .br-h1 {
+        display: block;
+    }
+
+    form {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+
+    .galeria {
+        justify-content: space-around !important;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .card-img-top {
+        max-width: 300px !important;
+        min-width: 300px !important;
+        max-height: 300px !important;
+        min-height: 300px !important;
+    }
+
+    h5.card-title {
+        font-size: 2rem !important;
+        font-weight: 600 !important;
+    }
+
+    .body-content {
+        padding-left: 15px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .mt-5 form {
+        flex-direction: row !important;
+        gap: 0.5rem !important;
+    }
+
+    .filtros label {
+        text-align: center !important;
+    }
+
+    .filtros .form-control {
+        width: 150px !important;
+    }
+}

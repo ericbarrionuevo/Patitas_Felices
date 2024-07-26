@@ -1,0 +1,28 @@
+﻿* {
+    -webkit-transition: 0.5s all !important;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Roboto Mono", monospace !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 400px !important;
+    color: #000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.body-content {
+    padding-left: 0 !important;
+}

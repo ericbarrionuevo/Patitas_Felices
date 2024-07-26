@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PatitasFelices.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patitas Felices - <%: Page.Title %></title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Styles/Master.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Header.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Footer.css" rel="stylesheet" type="text/css" />
+    <script src="JavaScript/Header.js" defer></script>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <header>
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                    <button
+                        class="navbar-toggler navbar-toggler-right"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <div class="burger-box">
+                            <div
+                                class="burger-inner header-menu-icon-halfLineHamburger navRight">
+                                <div class="top-bun"></div>
+                                <div class="patty"></div>
+                                <div class="bottom-bun"></div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Index.aspx">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Adopcion.aspx">Adopción</a>
+                            </li>
+                            <li class="nav-item">
+                                <%--<a class="nav-link" href="Transitos.aspx">Tránsitos</a>--%>
+                                <span class="nav-link">Tránsitos</span>
+                            </li>
+                            <li class="nav-item">
+                                <%--<a class="nav-link" href="MascotasPerdidas.aspx">Mascotas Perdidas</a>--%>
+                                <span class="nav-link">Mascotas Perdidas</span>
+                            </li>
+                            <li class="nav-item">
+                                <%--<a class="nav-link" href="Donaciones.aspx">Donaciones</a>--%>
+                                <span class="nav-link">Donaciones</span>
+                            </li>
+                            <li class="nav-item">
+                                <%--<a class="nav-link" href="AtencionVeterinaria.aspx">Atención Veterinaria</a>--%>
+                                <span class="nav-link">Atención Veterinaria</span>
+                            </li>
+                            <li class="nav-item">
+                                <%--<a class="nav-link" href="Voluntariado.aspx">Voluntariado</a>--%>
+                                <span class="nav-link">Voluntariado</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="DivLogo" runat="server" class="logo">
+            <a href="Index.aspx">
+                <img src="../Multimedia/Master/logo.png" alt="Logo" />
+            </a>
+        </div>
+
+        <%--<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" runat="server" href="~/Pages/Index.aspx">Inicio</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Pages/Index.aspx">Inicio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>--%>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--
+            <hr />
+            <footer>
+                <%--Patitas Felices&copy; <%: DateTime.Now.Year %>
+            </footer>
+            --%>
+            <footer>
+                <div class="enlaces">
+                    <a href="Index.aspx"><strong>Inicio</strong></a> │
+                    <a href="Adopcion.aspx"><strong>Adopción</strong></a> │
+                    <%--<a href="Transitos.aspx"><strong>Transitos</strong></a> │--%>
+                    <span href="Transitos.aspx"><strong>Transitos</strong></span> │
+                    <%--<a href="MascotasPerdidas.aspx"><strong>Mascotas Perdidas</strong></a> │--%>
+                    <span href="MascotasPerdidas.aspx"><strong>Mascotas Perdidas</strong></span> │
+                    <%--<a href="Donaciones.aspx"><strong>Donaciones</strong></a> │--%>
+                    <span href="Donaciones.aspx"><strong>Donaciones</strong></span> │
+                    <%--<a href="AtencionVeterinaria.aspx"><strong>Atención Veterinaria</strong></a> │--%>
+                    <span href="AtencionVeterinaria.aspx"><strong>Atención Veterinaria</strong></span> │
+                    <%--<a href="Voluntariado.aspx"><strong>Voluntariado</strong></a>--%>
+                    <span href="Voluntariado.aspx"><strong>Voluntariado</strong></span>
+                </div>
+            </footer>
+        </div>
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>

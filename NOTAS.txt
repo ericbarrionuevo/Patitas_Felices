@@ -1,0 +1,23 @@
+Perros:
+
+    Cachorro: Esta etapa abarca desde el nacimiento hasta los 12 meses de edad, aproximadamente. Se caracteriza por un rápido crecimiento físico y desarrollo, además de un comportamiento juguetón y exploratorio. Se subdivide en:
+        Neonatal: Desde el nacimiento hasta las 2 semanas de vida.
+        Cachorro joven: De 2 a 3 semanas hasta los 3 meses de edad.
+        Cachorro mayor: De 3 a 12 meses de edad.
+    Adulto: Esta etapa comprende desde los 12 meses hasta los 10-12 años de edad, dependiendo de la raza y el tamaño del perro. Se caracteriza por un crecimiento físico más lento, un comportamiento más maduro y una mayor estabilidad emocional. Se subdivide en:
+        Adulto joven: De 1 a 3 años de edad.
+        Adulto medio: De 3 a 7 años de edad.
+        Adulto senior: De 7 a 10-12 años de edad.
+    Geriátrico: Esta etapa comienza a partir de los 10-12 años de edad y se caracteriza por un declive gradual en las funciones físicas y cognitivas. Los cuidados veterinarios y el apoyo del hogar son fundamentales en esta etapa.
+
+Gatos:
+
+    Gatito: Esta etapa abarca desde el nacimiento hasta los 6 meses de edad, aproximadamente. Se caracteriza por un rápido crecimiento físico y desarrollo, además de un comportamiento juguetón y exploratorio. Se subdivide en:
+        Neonatal: Desde el nacimiento hasta las 2 semanas de vida.
+        Gatito joven: De 2 a 3 semanas hasta los 3 meses de edad.
+        Gatito mayor: De 3 a 6 meses de edad.
+    Adulto: Esta etapa comprende desde los 6 meses hasta los 15 años de edad, aproximadamente. Se caracteriza por un crecimiento físico más lento, un comportamiento más maduro y una mayor estabilidad emocional. Se subdivide en:
+        Adulto joven: De 6 a 1 año de edad.
+        Adulto medio: De 1 a 7 años de edad.
+        Adulto senior: De 7 a 15 años de edad.
+    Geriátrico: Esta etapa comienza a partir de los 15 años de edad y se caracteriza por un declive gradual en las funciones físicas y cognitivas. Los cuidados veterinarios y el apoyo del hogar son fundamentales en esta etapa.
