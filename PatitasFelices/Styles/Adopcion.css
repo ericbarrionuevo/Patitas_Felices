@@ -1,15 +1,4 @@
-﻿.mt-5 {
-    max-width: 100% !important;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 2rem auto 0 !important;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.center-div {
+﻿.center-div {
     position: fixed !important;
     top: -1px !important;
     left: 0 !important;
@@ -19,14 +8,7 @@
     text-align: center !important;
     background-color: #333 !important;
     opacity: 1 !important;
-}
-
-.mt-4.top {
-    margin: 10rem auto 0 !important;
-}
-
-.mt-4.bottom {
-    margin: 0 auto 5rem !important;
+    /*display: none;*/
 }
 
 h1 {
@@ -37,15 +19,81 @@ h1 {
     filter: blur(1px);
 }
 
-.br-h1 {
-    display: none;
+.accordion {
+    background-color: #333 !important;
+    font-weight: 600 !important;
+    border: none !important;
 }
 
-form {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
+.accordion .accordion-item {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.accordion .accordion-button {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    filter: invert(100%) !important;
+}
+
+.accordion .accordion-collapse {
+    background-color: transparent !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+.accordion accordion-body {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.filtros-busqueda, .filtros-campos {
+    display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 380px;
+}
+
+.texto-buscar {
+}
+
+.texto-buscar #MainContent_TxtBuscar {
+    width: 200px !important;
+    height: 38px !important;
+    border-radius: 10px;
+}
+
+.btn-buscar {
+    width: 100px !important;
+}
+
+.filtros-campos {
+    margin: 2rem auto 0 !important;
+}
+
+.filtros-campos .filtros-label, .filtros-campos .filtros-value {
+    width: 150px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtros-campos .filtros-label span, .filtros-campos .filtros-value select {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.filtros-campos .filtros-label span {
+    margin: 5px 0 !important;
+    max-height: 25px !important;
+    height: 25px !important;
+}
+
+.filtros-campos .filtros-value select {
+    text-align: center;
+    margin: 5px 0 !important;
 }
 
 .galeria {
@@ -150,6 +198,10 @@ h5.card-title {
     cursor: pointer !important;
 }
 
+.card-text {
+    margin-bottom: 0 !important;
+}
+
 .div-card-txt {
     text-align: left !important;
     margin: 1rem auto !important;
@@ -166,6 +218,14 @@ h5.card-title {
     max-height: 230px !important;
     min-height: 230px !important;
     padding: 1rem !important;
+    align-items: center !important;
+    align-content: center !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.card-img-top img {
+    border-radius: 10px !important;
 }
 
 .card a {
@@ -198,10 +258,30 @@ h5.card-title {
 
 }
 
+.div-texto {
+    padding: 0 1rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-texto-label {
+    text-align: right;
+}
+
+.div-texto-value {
+    text-align: left;
+    padding: 0 1rem;
+}
+
 .card-btn {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .card-btn span {
@@ -219,16 +299,53 @@ h5.card-title {
     outline: none !important;
 }
 
-.pagination .page-item .page-link {
-    color: black;
-    background-color: darkgrey;
-    outline: none !important;
-    border: none !important;
+footerTemplate {
+    display: flex;
+    justify-content: center;
 }
 
-.pagination .active .page-link {
-    color: white;
-    background-color: black;
+.pagination-top {
+    margin: 11rem 0 -8rem 0 !important;
+}
+
+.pagination-bottom {
+    margin-bottom: 4rem;
+}
+
+footerTemplate ul {
+    display: flex;
+    justify-content: center;
+}
+
+footerTemplate ul div {
+    display: flex;
+    justify-content: center;
+}
+
+footerTemplate ul li {
+    color: black !important;
+    background-color: #333 !important;
+    outline: none !important;
+    border: none !important;
+    border-radius: 50px !important;
+}
+
+footerTemplate ul .page-link {
+    color: #fff !important;
+    background-color: #333 !important;
+    outline: none !important;
+    border: none !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+}
+
+footerTemplate ul .actual-page {
+    color: #fff !important;
+    background-color: #8a8a8a !important;
+    outline: none !important;
+    border: none !important;
+    cursor: not-allowed !important;
+    box-shadow: 0px 5px 2px #000 !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -245,8 +362,28 @@ h5.card-title {
         justify-content: space-around !important;
     }
 
+    .card-link {
+        display: flex;
+        justify-content: center;
+    }
+
     .card {
         width: 100% !important;
+        min-width: 322px !important;
+        max-width: 322px !important;
+    }
+
+    .div-ubicacion {
+        font-size: 20px !important;
+        margin-bottom: 3rem !important;
+    }
+
+    .div-texto {
+        font-size: 20px !important;
+    }
+
+    .card-btn {
+        font-size: 25px !important;
     }
 
     .card-img-top {

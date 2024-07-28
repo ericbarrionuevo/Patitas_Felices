@@ -1,5 +1,8 @@
---create database Patitas_Felices_DB
---GO
+create database Patitas_Felices_DB
+GO
+
+use Patitas_Felices_DB
+GO
 
 --Tables
 create table Pet_Types(
@@ -12,16 +15,30 @@ create table Pet_Sexes(
 	_Description varchar(50) not null,
 	_State bit not null default(1)
 )
+create table Pet_Sizes(
+	_ID bigint primary key not null identity(1,1),
+	_Description varchar(50) not null,
+	_State bit not null default(1)
+)
+create table Pet_Behaviors(
+	_ID bigint primary key not null identity(1,1),
+	_Description varchar(50) not null,
+	_State bit not null default(1)
+)
 create table Pets(
 	_ID bigint primary key not null identity(1,1),
 	_Name varchar(100) not null,
+	_Description varchar(4000) null,
 	_Age varchar(50) not null,
 	_Breed varchar(100) not null,
 	_Color varchar(100) not null,
 	_ID_Sex bigint not null foreign key references Pet_Sexes(_ID),
 	_ID_Type bigint not null foreign key references Pet_Types(_ID),
+	_ID_Size bigint not null foreign key references Pet_Sizes(_ID),
+	_ID_Behavior bigint not null foreign key references Pet_Behaviors(_ID),
 	_Location varchar(200) not null default('Sin Completar'),
 	_Link varchar(1000) null,
+	_Dischard_Date date not null default(getdate()),
 	_State bit not null default(1)
 )
 create table Pets_Images(
@@ -41,34 +58,41 @@ insert into Pet_Types(_Description) values
 insert into Pet_Sexes(_Description) values
 ('Macho'),
 ('Hembra')
-insert into Pets(_Name, _Age, _Breed, _Color, _ID_Sex, _ID_Type, _Location) values
-('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 'Gral. San Martín'),
-('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 'Vicente López'),
-('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 'Gral. San Martín'),
-('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 'Vicente López'),
-('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 'Gral. San Martín'),
-('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 'Vicente López'),
-('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 'Gral. San Martín'),
-('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 'Vicente López'),
-('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 'Gral. San Martín'),
-('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 'Vicente López'),
-('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 'Gral. San Martín'),
-('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 'Vicente López'),
-('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 'Gral. San Martín'),
-('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 'Vicente López'),
-('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 'Gral. San Martín'),
-('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 'Vicente López'),
-('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 'Gral. San Martín'),
-('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 'Vicente López')
+insert into Pet_Sizes(_Description) values
+('Chico'),
+('Mediano'),
+('Grande')
+insert into Pet_Behaviors(_Description) values
+('Tranquilo'),
+('Territorial')
+insert into Pets(_Name, _Age, _Breed, _Color, _ID_Sex, _ID_Type, _ID_Size, _ID_Behavior, _Location) values
+('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 3, 2, 'Gral. San Martín'),
+('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 1, 1, 'Vicente López'),
+('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 3, 2, 'Gral. San Martín'),
+('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 1, 1, 'Vicente López'),
+('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 3, 2, 'Gral. San Martín'),
+('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 1, 1, 'Vicente López'),
+('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 3, 2, 'Gral. San Martín'),
+('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 1, 1, 'Vicente López'),
+('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 3, 2, 'Gral. San Martín'),
+('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 1, 1, 'Vicente López'),
+('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 3, 2, 'Gral. San Martín'),
+('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 1, 1, 'Vicente López'),
+('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 3, 2, 'Gral. San Martín'),
+('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 1, 1, 'Vicente López'),
+('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 3, 2, 'Gral. San Martín'),
+('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 1, 1, 'Vicente López'),
+('Rex', '2 Años', 'Labrador', 'Amarillo', 1, 1, 3, 2, 'Gral. San Martín'),
+('Luna', '1 Año', 'Siamés', 'Blanco/Negro', 2, 2, 1, 1, 'Vicente López')
 insert into Pets_Images(_Pet_ID, _Link, _Alternate_Text, _Order) values
---(1, '../Multimedia/Adopcion/foto-labrador.jpg', 'Foto 1', 1),
---(1, '../Multimedia/Adopcion/Foto2.jpg', 'Foto 2', 2),
---(1, '../Multimedia/Adopcion/Foto3.jpg', 'Foto 3', 3),
---(1, '../Multimedia/Adopcion/Foto4.jpg', 'Foto 4', 4),
---(2, '../Multimedia/Adopcion/foto-siames.jpg', 'Foto 1', 1),
---(2, '../Multimedia/Adopcion/Foto2.jpg', 'Foto 2', 2),
---(2, '../Multimedia/Adopcion/Foto3.jpg', 'Foto 3', 3),
---(2, '../Multimedia/Adopcion/Foto4.jpg', 'Foto 4', 4),
+(1, '../Multimedia/Adopcion/foto-labrador.jpg', 'Foto 1', 1),
+(1, '../Multimedia/Adopcion/Foto2.jpg', 'Foto 2', 2),
+(1, '../Multimedia/Adopcion/Foto3.jpg', 'Foto 3', 3),
+(1, '../Multimedia/Adopcion/Foto4.jpg', 'Foto 4', 4),
+(2, '../Multimedia/Adopcion/foto-siames.jpg', 'Foto 1', 1),
+(2, '../Multimedia/Adopcion/Foto2.jpg', 'Foto 2', 2),
+(2, '../Multimedia/Adopcion/Foto3.jpg', 'Foto 3', 3),
+(2, '../Multimedia/Adopcion/Foto4.jpg', 'Foto 4', 4),
 (3, '../Multimedia/Adopcion/foto-labrador.jpg', 'Foto 1', 1),
 (3, '../Multimedia/Adopcion/Foto2.jpg', 'Foto 2', 2),
 (3, '../Multimedia/Adopcion/Foto3.jpg', 'Foto 3', 3),
@@ -139,8 +163,10 @@ GO
 create or alter view Pets_List
 as
 	select P.*,
-	(select _Description from Pet_Sexes PS where P._ID_Sex = PS._ID) _Description_Sex,
-	(select _Description from Pet_Types PT where P._ID_Type = PT._ID) _Description_Type
+	(select _Description from Pet_Sexes PSe where P._ID_Sex = PSe._ID) _Description_Sex,
+	(select _Description from Pet_Types PT where P._ID_Type = PT._ID) _Description_Type,
+	(select _Description from Pet_Sizes PSi where P._ID_Size = PSi._ID) _Description_Size,
+	(select _Description from Pet_Behaviors PB where P._ID_Behavior = PB._ID) _Description_Behavior
 	from Pets P
 GO
 

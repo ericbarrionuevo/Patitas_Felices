@@ -88,11 +88,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comportamiento_MascotaDB.cs" />
     <Compile Include="ConexionDB.cs" />
     <Compile Include="Imagen_MascotaDB.cs" />
     <Compile Include="MascotaDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sexo_MascotaDB.cs" />
+    <Compile Include="Tamaño_MascotaDB.cs" />
     <Compile Include="Tipo_MascotaDB.cs" />
     <Compile Include="UsuarioDB.cs" />
   </ItemGroup>

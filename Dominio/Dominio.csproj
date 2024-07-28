@@ -87,10 +87,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comportamiento_Mascota.cs" />
     <Compile Include="Imagen_Mascota.cs" />
     <Compile Include="Mascota.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sexo_Mascota.cs" />
+    <Compile Include="Tamaño_Mascota.cs" />
     <Compile Include="Tipo_Mascota.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>

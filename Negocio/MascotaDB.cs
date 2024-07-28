@@ -32,6 +32,7 @@ namespace Negocio
                     Mascota mascota = new Mascota();
                     mascota.ID = Convert.ToInt64(conexionDB.Lector["_ID"]);
                     mascota.Nombre = conexionDB.Lector["_Name"].ToString();
+                    mascota.Descripcion = conexionDB.Lector["_Description"].ToString();
                     mascota.Edad = conexionDB.Lector["_Age"].ToString();
                     mascota.Raza = conexionDB.Lector["_Breed"].ToString();
                     mascota.Color = conexionDB.Lector["_Color"].ToString();
@@ -39,6 +40,10 @@ namespace Negocio
                     mascota.Sexo.Descripcion = conexionDB.Lector["_Description_Sex"].ToString();
                     mascota.Tipo.ID = Convert.ToInt64(conexionDB.Lector["_ID_Type"]);
                     mascota.Tipo.Descripcion = conexionDB.Lector["_Description_Type"].ToString();
+                    mascota.Tamaño.ID = Convert.ToInt64(conexionDB.Lector["_ID_Size"]);
+                    mascota.Tamaño.Descripcion = conexionDB.Lector["_Description_Size"].ToString();
+                    mascota.Comportamiento.ID = Convert.ToInt64(conexionDB.Lector["_ID_Behavior"]);
+                    mascota.Comportamiento.Descripcion = conexionDB.Lector["_Description_Behavior"].ToString();
                     mascota.Ubicacion = conexionDB.Lector["_Location"].ToString();
                     foreach (Imagen_Mascota img in lista_imagenes)
                     {
@@ -48,6 +53,7 @@ namespace Negocio
                         }
                     }
                     mascota.Link = conexionDB.Lector["_Link"].ToString();
+                    mascota.Fecha_Alta = Convert.ToDateTime(conexionDB.Lector["_Dischard_Date"]);
                     mascota.Estado = true;
                     lista.Add(mascota);
                 }
