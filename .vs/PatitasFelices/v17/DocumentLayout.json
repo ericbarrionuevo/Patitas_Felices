@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\juanm\\Escritorio\\Github\\Patitas_Felices\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Juan Manuel\\Desktop\\Proyectos\\Patitas_Felices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40DCB6A0-BE35-4474-8919-99B00ECA37A4}|PatitasFelices\\PatitasFelices.csproj|c:\\users\\juan manuel\\desktop\\proyectos\\patitas_felices\\patitasfelices\\styles\\adopcion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{40DCB6A0-BE35-4474-8919-99B00ECA37A4}|PatitasFelices\\PatitasFelices.csproj|solutionrelative:patitasfelices\\styles\\adopcion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40DCB6A0-BE35-4474-8919-99B00ECA37A4}|PatitasFelices\\PatitasFelices.csproj|c:\\users\\juan manuel\\desktop\\proyectos\\patitas_felices\\patitasfelices\\styles\\master.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{40DCB6A0-BE35-4474-8919-99B00ECA37A4}|PatitasFelices\\PatitasFelices.csproj|solutionrelative:patitasfelices\\styles\\master.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40DCB6A0-BE35-4474-8919-99B00ECA37A4}|PatitasFelices\\PatitasFelices.csproj|c:\\users\\juan manuel\\desktop\\proyectos\\patitas_felices\\patitasfelices\\adopcion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{40DCB6A0-BE35-4474-8919-99B00ECA37A4}|PatitasFelices\\PatitasFelices.csproj|solutionrelative:patitasfelices\\adopcion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Master.css",
+              "DocumentMoniker": "C:\\Users\\Juan Manuel\\Desktop\\Proyectos\\Patitas_Felices\\PatitasFelices\\Styles\\Master.css",
+              "RelativeDocumentMoniker": "PatitasFelices\\Styles\\Master.css",
+              "ToolTip": "C:\\Users\\Juan Manuel\\Desktop\\Proyectos\\Patitas_Felices\\PatitasFelices\\Styles\\Master.css",
+              "RelativeToolTip": "PatitasFelices\\Styles\\Master.css",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-03T14:20:15.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Adopcion.css",
+              "DocumentMoniker": "C:\\Users\\Juan Manuel\\Desktop\\Proyectos\\Patitas_Felices\\PatitasFelices\\Styles\\Adopcion.css",
+              "RelativeDocumentMoniker": "PatitasFelices\\Styles\\Adopcion.css",
+              "ToolTip": "C:\\Users\\Juan Manuel\\Desktop\\Proyectos\\Patitas_Felices\\PatitasFelices\\Styles\\Adopcion.css",
+              "RelativeToolTip": "PatitasFelices\\Styles\\Adopcion.css",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAACwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-03T13:24:53.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Adopcion.aspx",
+              "DocumentMoniker": "C:\\Users\\Juan Manuel\\Desktop\\Proyectos\\Patitas_Felices\\PatitasFelices\\Adopcion.aspx",
+              "RelativeDocumentMoniker": "PatitasFelices\\Adopcion.aspx",
+              "ToolTip": "C:\\Users\\Juan Manuel\\Desktop\\Proyectos\\Patitas_Felices\\PatitasFelices\\Adopcion.aspx",
+              "RelativeToolTip": "PatitasFelices\\Adopcion.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-08-03T13:18:17.447Z",
+              "EditorCaption": ""
             }
           ]
         }

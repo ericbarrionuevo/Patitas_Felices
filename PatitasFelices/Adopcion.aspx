@@ -6,55 +6,48 @@
     <script src="../JavaScript/Adopcion.js" defer></script>
 
     <div class="container">
-        <div class="center-div">
+
+        <div class="div-title">
             <h1>Adopción</h1>
-            <div class="accordion" id="AccordionFilters">
-                <div class="accordion-item">
-                    <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Filtros</span>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="filtros-busqueda">
-                                <div class="texto-buscar">
-                                    <asp:TextBox ID="TxtBuscar" runat="server" />
-                                </div>
-                                <div class="btn-buscar">
-                                    <asp:Button CssClass="btn btn-success btn-buscar" ID="BtnBuscar" Text="Buscar" runat="server" />
-                                </div>
+        </div>
+        <div class="accordion" id="AccordionFilters">
+            <div class="accordion-item">
+                <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Filtros</span>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="filtros-campos">
+                            <div class="filtros-label">
+                                <asp:Label Text="Comportamiento" runat="server" />
+                                <asp:Label Text="Edad" runat="server" />
+                                <asp:Label Text="Sexo" runat="server" />
+                                <asp:Label Text="Tamaño" runat="server" />
+                                <asp:Label Text="Especie" runat="server" />
                             </div>
-                            <div class="filtros-campos">
-                                <div class="filtros-label">
-                                    <asp:Label Text="Comportamiento" runat="server" />
-                                    <asp:Label Text="Edad" runat="server" />
-                                    <asp:Label Text="Sexo" runat="server" />
-                                    <asp:Label Text="Tamaño" runat="server" />
-                                    <asp:Label Text="Especie" runat="server" />
+                            <div class="filtros-value">
+                                <div class="filtro-comportamiento">
+                                    <asp:DropDownList ID="DdlComportamientos" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
+                                        <asp:ListItem Value="0" Text="-" />
+                                    </asp:DropDownList>
                                 </div>
-                                <div class="filtros-value">
-                                    <div class="filtro-comportamiento">
-                                        <asp:DropDownList ID="DdlComportamientos" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
-                                            <asp:ListItem Value="0" Text="-" />
-                                        </asp:DropDownList>
-                                    </div>
-                                    <div class="filtro-edad">
-                                        <asp:DropDownList ID="DdlEdades" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
-                                            <asp:ListItem Value="0" Text="-" />
-                                        </asp:DropDownList>
-                                    </div>
-                                    <div class="filtro-sexo">
-                                        <asp:DropDownList ID="DdlSexos" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
-                                            <asp:ListItem Value="0" Text="-" />
-                                        </asp:DropDownList>
-                                    </div>
-                                    <div class="filtro-tamaño">
-                                        <asp:DropDownList ID="DdlTamaños" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
-                                            <asp:ListItem Value="0" Text="-" />
-                                        </asp:DropDownList>
-                                    </div>
-                                    <div class="filtro-tipo">
-                                        <asp:DropDownList ID="DdlTipos" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
-                                            <asp:ListItem Value="0" Text="-" />
-                                        </asp:DropDownList>
-                                    </div>
+                                <div class="filtro-edad">
+                                    <asp:DropDownList ID="DdlEdades" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
+                                        <asp:ListItem Value="0" Text="-" />
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="filtro-sexo">
+                                    <asp:DropDownList ID="DdlSexos" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
+                                        <asp:ListItem Value="0" Text="-" />
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="filtro-tamaño">
+                                    <asp:DropDownList ID="DdlTamaños" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
+                                        <asp:ListItem Value="0" Text="-" />
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="filtro-tipo">
+                                    <asp:DropDownList ID="DdlTipos" runat="server" AutoPostBack="false" AppendDataBoundItems="true">
+                                        <asp:ListItem Value="0" Text="-" />
+                                    </asp:DropDownList>
                                 </div>
                             </div>
                         </div>
@@ -62,15 +55,28 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="center-div">
 
         <%-- PAGINADO top --%>
-        <footertemplate class="pagination-top">
+        <%--<footertemplate class="pagination-top">
             <div class="div-container-paginado">
                 <ul class="pagination">
                     <li class="page-item"><%= GetPaginacion() %></li>
                 </ul>
             </div>
-        </footertemplate>
+        </footertemplate>--%>
+
+
+        <div class="filtros-busqueda">
+            <div class="texto-buscar">
+                <asp:TextBox ID="TxtBuscar" runat="server" />
+            </div>
+            <div class="btn-buscar">
+                <asp:Button CssClass="btn btn-success btn-buscar" ID="BtnBuscar" Text="Buscar" runat="server" />
+            </div>
+        </div>
 
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 galeria">
             <asp:Repeater ID="RepeaterMascotas" runat="server">
