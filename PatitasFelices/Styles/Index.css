@@ -26,13 +26,19 @@ div {
 }
 
 h1 {
-    font-size: 6rem !important;
+    font-size: 5rem !important;
+    font-weight: 600;
     max-width: 100%;
     text-transform: uppercase;
-    color: #fff !important;
-    text-shadow: -2px 2px 2px #000;
-    filter: blur(1px);
+    color: #333 !important;
+    text-shadow: 0 0 10px #fff;
+    /*filter: blur(1px);*/
     transition: opacity 1s ease-in-out !important;
+}
+
+.btn-link {
+    justify-content: center;
+    display: flex;
 }
 
 .div-h2 {
@@ -46,7 +52,7 @@ h2 {
     font-size: 3rem !important;
     font-weight: 600 !important;
     color: #fff !important;
-    text-shadow: -1px 2px 4px #000;
+    text-shadow: -1px 2px 4px #333;
     text-transform: uppercase;
     position: absolute;
     transition: opacity 1s ease-in-out !important;
@@ -56,7 +62,7 @@ h2 {
     font-size: 2rem !important;
     font-weight: 600 !important;
     background-color: #6a80037d !important;
-    width: 250px !important;
+    width: 40rem !important;
     height: 150px !important;
     align-content: center !important;
     margin: 4rem !important;
@@ -105,40 +111,34 @@ h2 {
         -webkit-transition: 0.5s ease-in-out !important;
     }
 
-    h1 {
-        font-size: 4rem !important;
-    }
-}
-
-@media screen and (max-width: 835px) {
     .container {
-        margin-top: 9rem !important;
+        margin-top: 6rem !important;
         -webkit-transition: 0.5s ease-in-out !important;
     }
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 3rem !important;
-    }
-
     #btnAdoptar {
         font-size: 2rem !important;
-        width: fit-content*2 !important;
+        /*width: fit-content*2 !important;*/
         height: auto !important;
         -webkit-transition: 0.5s ease-in-out !important;
     }
 
+    h1 {
+        font-size: 3rem !important;
+    }
+
+    .div-h2 {
+        margin: 4rem 0 !important;
+    }
+
     h2 {
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
     }
 }
 
-@media screen and (max-width: 590px) {
-    h1 {
-        font-size: 2.5rem !important;
-    }
-
+@media screen and (max-width: 565px) {
     #btnAdoptar {
         font-size: 1.5rem !important;
         width: fit-content !important;
@@ -146,19 +146,11 @@ h2 {
         -webkit-transition: 0.5s ease-in-out !important;
     }
 
-    h2 {
-        font-size: 2rem !important;
-    }
-}
-
-@media screen and (max-width: 365px) {
-    h2 {
-        font-size: 1.7rem !important;
-    }
-}
-
-@media screen and (max-height: 700px) {
     h1 {
-        font-size: 2rem !important;
+        font-size: 2.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
     }
 }

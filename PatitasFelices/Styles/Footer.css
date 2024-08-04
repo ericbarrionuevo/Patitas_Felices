@@ -1,6 +1,6 @@
 ﻿footer {
-    background-color: #333;
-    color: white;
+    background-color: #fff;
+    color: #333;
     padding: 0;
     text-align: center;
     align-content: center;
@@ -9,13 +9,14 @@
     left: 0;
     height: 50px;
     width: 100%;
-    z-index: 1000 !important;
+    z-index: 999 !important;
+    opacity: 0.8;
     /*display: none;*/
 }
 
     footer a, footer span {
         font-size: 1.2rem;
-        color: white;
+        color: #333;
         text-decoration: none;
         margin: 0 10px;
         text-transform: uppercase;

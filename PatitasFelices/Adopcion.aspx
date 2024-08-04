@@ -51,6 +51,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="filtros-btn-aplicar">
+                            <asp:Button ID="BtnFiltrar" Text="Filtrar" runat="server" CssClass="btn btn-success btn-filtrar" />
+                        </div>
                     </div>
                 </div>
             </div>

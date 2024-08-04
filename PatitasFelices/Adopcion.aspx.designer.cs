@@ -60,6 +60,15 @@ namespace PatitasFelices
         protected global::System.Web.UI.WebControls.DropDownList DdlTipos;
 
         /// <summary>
+        /// Control BtnFiltrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnFiltrar;
+
+        /// <summary>
         /// Control TxtBuscar.
         /// </summary>
         /// <remarks>

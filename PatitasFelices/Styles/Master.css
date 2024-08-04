@@ -24,18 +24,18 @@ body {
     position: relative;
 }
 
-    body::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 1250px !important;
-        background: inherit; /* Hereda la imagen de fondo del body */
-        filter: blur(8px); /* Ajusta el valor del blur según sea necesario */
-        z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del body */
-    }
+/*body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1250px !important;
+    background: inherit;*/ /* Hereda la imagen de fondo del body */
+    /*filter: blur(8px);*/ /* Ajusta el valor del blur según sea necesario */
+    /*z-index: -1;*/ /* Coloca el pseudo-elemento detrás del contenido del body */
+/*}*/
 
 .body-content {
     padding-left: 0 !important;
